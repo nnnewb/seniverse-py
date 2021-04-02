@@ -1,5 +1,9 @@
 # seniverse-py
 
+![seniverse-py version badge](https://img.shields.io/pypi/v/seniverse-py?style=for-the-badge)
+![seniverse-py python-version badge](https://img.shields.io/pypi/pyversions/seniverse-py?style=for-the-badge)
+![seniverse-py license badge](https://img.shields.io/pypi/l/seniverse-py?style=for-the-badge)
+
 seniverse-py is third-party sdk of seniverse.com (心知天气). only weather apis are implemented for now.
 
 ## Quickstart
