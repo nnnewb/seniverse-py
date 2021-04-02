@@ -3,7 +3,7 @@ name = "seniverse-py"
 version = "0.1.0"
 description = "心知天气第三方SDK / seniverse third party sdk for python3"
 authors = ["weak_ptr <weak_ptr@outlook.com>"]
-license = "MIT"
+license = "GPL-v3"
 packages=[
     { include="seniverse" }
 ]
