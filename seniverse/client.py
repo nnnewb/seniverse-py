@@ -1,7 +1,14 @@
-from seniverse.exceptions import SeniverseV3ApiError
-from typing import Any, Dict, Literal
+from typing import Any, Dict
+
+try:
+    from typing import Literal
+except ImportError:
+    # for python3.6+ compatible
+    from typing_extensions import Literal
+
 import requests
 
+from seniverse.exceptions import SeniverseV3ApiError
 from seniverse.types import CommonParams
 
 
