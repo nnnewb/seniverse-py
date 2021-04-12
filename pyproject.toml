@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "seniverse-py"
-version = "0.1.0"
+version = "0.1.1"
 description = "心知天气第三方SDK / seniverse third party sdk for python3"
 authors = ["weak_ptr <weak_ptr@outlook.com>"]
 license = "GPL-v3"
