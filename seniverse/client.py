@@ -1,4 +1,5 @@
 from typing import Any, Dict
+import json
 
 try:
     from typing import Literal
@@ -6,7 +7,9 @@ except ImportError:
     # for python3.6+ compatible
     from typing_extensions import Literal
 
-import requests
+from urllib.parse import urlencode
+from urllib.request import Request,  urlopen
+
 
 from seniverse.exceptions import SeniverseV3ApiError
 from seniverse.types import CommonParams
@@ -36,7 +39,9 @@ class SeniverseV3:
 
     def _get(self, url: str, params: CommonParams) -> Dict[str, Any]:
         params['key'] = self._key
-        data = requests.get(url, params=params).json()
+
+        resp = urlopen(Request(f'{url}?{urlencode(params)}'))
+        data = json.load(resp)
         if data.get('status_code'):
             raise SeniverseV3ApiError(data['status_code'], data['status'])
 
