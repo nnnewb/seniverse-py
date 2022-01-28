@@ -23,3 +23,9 @@ def key():
 def client(uid, key):
     from seniverse.client import SeniverseV3
     yield SeniverseV3(uid, key)
+
+@fixture(scope='function')
+def client_v4(uid, key):
+    from seniverse import SeniverseV4
+    yield SeniverseV4(uid, key)
+
