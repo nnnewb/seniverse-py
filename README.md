@@ -6,6 +6,12 @@
 
 seniverse-py is third-party sdk of seniverse.com (心知天气). only weather apis are implemented for now.
 
+## CAUTION
+
+Seniverse API v4 support still under development.
+
+Because I don't have access to the Seniverse premium API and don't use the product in my work, development may be delayed or abandoned.
+
 ## Quickstart
 
 install by `pip` command.
